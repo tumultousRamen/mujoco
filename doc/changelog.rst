@@ -45,6 +45,8 @@ Bug fixes
   contribution by :github:user:`michael-ahn`).
 - Fixed a bug wherein, for models that have both muscles and stateless actuators and used one of the implicit
   integrators, wrong derivatives would be computed.
+- Fixed a bug in tendon wrapping around spheres. Before this fix, tendons that wrapped around spheres with an
+  externally-placed :ref:`sidesite<spatial-geom-sidesite>` could jump inside the sphere instead of wrapping around it.
 
 Python bindings
 ^^^^^^^^^^^^^^^
